@@ -203,8 +203,6 @@ document.addEventListener("DOMContentLoaded", () => {
     autoplay: true,
     autoplayHoverPause: true,
     loop: true,
-    // stagePadding: 120,
-    // animateIn: "fadeInLeft",
     responsive: {
       0: {
         items: 1.25,
@@ -215,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
         stagePadding: 0,
       },
       1000: {
-        items: 2.5,
+        items: 1.5,
       },
     },
   });
