@@ -1307,7 +1307,7 @@ nav.navbar {
   -ms-border-radius: 0.75rem;
   -o-border-radius: 0.75rem;
 }
-.team-card.card-img-top {
+.team-card .card-img-top {
   background: var(--main);
   aspect-ratio: 3 / 4; /* قريب جدًا */
   height: 100%;
@@ -1325,7 +1325,7 @@ nav.navbar {
   position: absolute;
   inset: 0;
   flex-grow: 1;
-  padding: 1.2rem 0.85rem;
+  padding: 1rem .58rem;
   background: linear-gradient(
     0deg,
     rgba(52, 49, 48, 0.9) 0%,
