@@ -173,6 +173,33 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  $(".articles .owl-carousel").owlCarousel({
+    margin: 18,
+    responsiveClass: true,
+    rtl: dirAr,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayHoverPause: true,
+    loop: true,
+    stagePadding: 4,
+    items: 3,
+    // animateIn: "fadeInLeft",
+    responsive: {
+      0: {
+        items: 1.2,
+        stagePadding: 0,
+      },
+      600: {
+        items: 2.1,
+        stagePadding: 0,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
+
   $(".awards .owl-carousel").owlCarousel({
     margin: 16,
     responsiveClass: true,
