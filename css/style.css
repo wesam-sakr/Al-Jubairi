@@ -45,6 +45,7 @@ body {
 }
 [dir="rtl"] body {
   direction: rtl;
+  font-family: "tajawal", sans-serif;
 }
 [dir="rtl"] [type="email"],
 [dir="rtl"] [type="number"],
@@ -95,13 +96,20 @@ img {
   background-color: var(--secondary);
 }
 
-[dir="rtl"] [class*="-chevron"].bi::before,
+[dir="rtl"] [class*="-arrow"] ,
+[dir="rtl"] [class*="-chevron"].bi::before{
+  transform: rotate(1800deg);
+  -webkit-transform: rotate(1800deg);
+  -moz-transform: rotate(1800deg);
+  -ms-transform: rotate(1800deg);
+  -o-transform: rotate(1800deg);
+}
 [dir="rtl"] [class*="-arrow"].bi::before {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
 }
 
 .owl-carousel .owl-stage {
@@ -298,6 +306,10 @@ img {
   border-radius: 0.3125rem;
   background: linear-gradient(90deg, rgba(198, 120, 43, 0) 0%, #c6782b 100%);
 }
+[dir="rtl"] .secName::before{
+  background: linear-gradient(-90deg, rgba(198, 120, 43, 0) 0%, #c6782b 100%);
+
+}
 .secTitle {
   font-weight: bold;
   font-size: 2rem;
@@ -307,34 +319,7 @@ img {
 .secDesc {
   font-weight: lighter;
 }
-.more {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: fit-content;
-  color: var(--main) !important;
-  font-weight: 500;
-}
-.arrow-more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  border: 1px dashed var(--white);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  font-size: 12px;
-  margin-inline-start: -18px;
-}
-.arrow-more i {
-  opacity: 0;
-}
+
 .main {
   color: var(--main) !important;
 }
@@ -1662,6 +1647,9 @@ width: fit-content;
   align-self: stretch;
   gap: 1.5rem;
 }
+[dir="rtl"] .testimonials .testimonial-content {
+  background-position: 0% 100%;
+}
 
 .testimonial-header .testimonial-position {
   color: #6c6158;
@@ -1953,6 +1941,7 @@ width: fit-content;
 }
 .main-footer .footer-brand {
   width: 2.6875rem;
+  position: relative;
 }
 .main-footer .brand-name {
   font-family: "tajawal", sans-serif;
