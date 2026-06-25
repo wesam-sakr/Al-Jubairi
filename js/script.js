@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  $(".our_team .owl-carousel").owlCarousel({
+  $(".team-slider.owl-carousel").owlCarousel({
     margin: 16,
     responsiveClass: true,
     rtl: dirAr,
@@ -173,6 +173,48 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  $(".awards-slider .owl-carousel").owlCarousel({
+    margin: 16,
+    responsiveClass: true,
+    rtl: dirAr,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayHoverPause: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 0,
+      },
+      600: {
+        items: 1.8,
+        stagePadding: 0,
+      },
+      1000: {
+        items: 2.5,
+      },
+    },
+  });
+
+  $(".testimonials .owl-carousel").owlCarousel({
+    margin: 8,
+    stagePadding: 4,
+    responsiveClass: true,
+    rtl: dirAr,
+    nav: true,
+    navText: [
+      `<span class="prev"><i class="bi bi-arrow-left"></i></span>`,
+      `<span class="next"><i class="bi bi-arrow-right"></i></i></span>`,
+    ],
+    dots: false,
+    autoplay: true,
+    autoplayHoverPause: true,
+    loop: true,
+    items: 1,
+
+  });
+
   $(".articles .owl-carousel").owlCarousel({
     margin: 18,
     responsiveClass: true,
@@ -198,70 +240,6 @@ document.addEventListener("DOMContentLoaded", () => {
         items: 3,
       },
     },
-  });
-
-  $(".awards .owl-carousel").owlCarousel({
-    margin: 16,
-    responsiveClass: true,
-    rtl: dirAr,
-    nav: false,
-    dots: true,
-    // autoplay: true,
-    loop: true,
-    animateIn: "fadeInLeft",
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 2,
-      },
-    },
-  });
-
-  $(".awards-slider .owl-carousel").owlCarousel({
-    margin: 16,
-    responsiveClass: true,
-    rtl: dirAr,
-    nav: false,
-    autoplay: true,
-    autoplayHoverPause: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1.25,
-        stagePadding: 0,
-      },
-      600: {
-        items: 2.1,
-        stagePadding: 0,
-      },
-      1000: {
-        items: 1.5,
-      },
-    },
-  });
-
-
-  $(".testimonials .owl-carousel").owlCarousel({
-    margin: 8,
-    stagePadding: 4,
-    responsiveClass: true,
-    rtl: dirAr,
-    nav: true,
-    navText: [
-      `<span class="prev"><i class="bi bi-arrow-left"></i></span>`,
-      `<span class="next"><i class="bi bi-arrow-right"></i></i></span>`,
-    ],
-    dots: false,
-    autoplay: true,
-    autoplayHoverPause: true,
-    loop: true,
-    items: 1,
-
   });
 
   // upload and preview multiple images such as dropzone
